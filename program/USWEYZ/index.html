@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>A sack full of angry snakes: Taming your python dependencies with Nix</h1>
+<div class="time-bar">
+  Fri September 04, 01:20 PM&ndash;01:45 PM &bull;
+  <a href="/program/fri/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-04T13:20:00+09:30"
+        >
+          13:20
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-04T13:45:00+09:30"
+        >
+          13:45
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-04T13:45:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/8ng4v1g5q7s"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>System Packages, pip install --user, virtualenv and conda. We have never had so many ways to install python packages, and yet it is becoming increasingly hard to tell exactly where all the packages you depend on are coming from and even harder to reproduce the same package setup twice.</p>
+<p>In this talk we'll learn how Nix package manager can provide a complete dependency management solution for python projects. Setting up isolated, reproducible development and build environments can be easy and fun, and can even directly generate incredibly svelte docker images with ease.</p></div>
+
+<p>Scientists, Researchers and Software Engineering projects should be paying attention to the reproducibility of their results. The best way to guarantee that the project you build today will be the same when built next week is to exactly specify your dependency tree. </p>
+<p>Imperative package management approaches (such as apt/pip/conda) provide few assurances that the package version you get today is the same version you'll get tomorrow, or that installing packages in a different order won't change the versions resolved. The problem gets even harder when you want to integrate with native extensions that rely on platform libraries and the ephemeral contents of /usr/share/. </p>
+<p>In this talk I'll discuss how Nix package manager can provide a complete dependency management solution for python projects on Linux and Mac. Nix can install and track exact, reproducible versions of python packages and their transitive dependencies including platform libraries, down to the compiler version that created them. No more guessing why your teammate can trigger a bug that you can't reproduce.</p>
+<p>Nix can use this dependency info to quickly get new teammates up and running with a full development environment, no worries about the setup instructions being out of date or incompatible with their chosen OS flavor. Finally, Nix can build your project in a sealed build environment that prevents your project sneakily including files that haven't been declared as dependencies. You can then confidently deploy these builds as minimal docker images, VM images, or directly via nix package caches.</p>
+
+
+  
+<div class="profile">
+  
+  <img src="/assets/people/9DA7HW.jpg" />
+  
+  <div class="details">
+    <b> Thomas Woolford</b>
+    <small>
+      he/him  
+    </small>
+      <p>Thomas is a lapsed web developer turned contractor working in software defined RADAR, an advocate of functional software design, and a lover of curly bois.
+He's perpetually chasing the next yak to shave, dragging along all who will listen, and having a blast learning new things.</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>

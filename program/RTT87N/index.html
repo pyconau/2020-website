@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>Why the float did it NaN?</h1>
+<div class="time-bar">
+  Fri September 04, 12:45 PM&ndash;01:10 PM &bull;
+  <a href="/program/fri/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-04T12:45:00+09:30"
+        >
+          12:45
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-04T13:10:00+09:30"
+        >
+          13:10
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-04T13:10:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/YTAT6wciV4k"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>The magic of floating point numbers sometimes bursts. The results are a wall of NaNs, Infs, and other errors, followed by frustrating debugging. We will explore the reasons for floats’ inconvenient behaviour, and ways for avoiding it.</p></div>
+
+<p>Floating point numbers are designed to be magic. For most mundane tasks, your calculations ‘just work’, and you are not supposed to think too much about it.</p>
+<p>From time to time though, the magic stops working. The maths that’s correct on a sheet of paper no longer gives the right results when done on a computer. Results of NaN or Inf, division by zero errors, and inaccurate answers have caused great frustration to many.</p>
+<p>To see why this happens, we will look under the hood of floating point numbers. Their structure in memory, and how it affects the accuracy of different operations. This is particularly relevant to data science, which entails lots of number crunching.</p>
+<p>We will see why subtraction is sometimes dangerous, why you should avoid multiplying probabilities, and why you should never invert a matrix. We will explore the tools Python, NumPy, and SciPy give us to avoid these pitfalls, such as LU decomposition and the LogAddExp trick.</p>
+
+
+  
+<div class="profile">
+  
+  <img src="/assets/people/BFNXPR.jpg" />
+  
+  <div class="details">
+    <b> Jakub Nabaglo</b>
+    <small>
+      he/him  
+    </small>
+      <p>Jakub is a machine learning engineer at a 4-person startup. He enjoys statistics, musicals, and teaching computer science.</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>

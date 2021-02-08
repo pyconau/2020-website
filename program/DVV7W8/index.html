@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>Interactive Mapmaking with Python</h1>
+<div class="time-bar">
+  Fri September 04, 05:10 PM&ndash;05:35 PM &bull;
+  <a href="/program/fri/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-04T17:10:00+09:30"
+        >
+          17:10
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-04T17:35:00+09:30"
+        >
+          17:35
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-04T17:35:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/kmvLn4Iagwo"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>Maps can help you tell amazing stories with your data and a lot of datasets we come across have a location component in them. Leveraging location data to create beautiful maps was once a daunting endeavor done only by cartographers with artistic skills but now with a pinch of python and some open-source help we can easily create interactive maps with our data</p>
+<p>GeoDataframes are awesome for working with GIS data in Python as it provides the goodness of pandas for geographic data, So let's use them to create some cool interactive maps</p></div>
+
+<ol>
+<li>Introduction (2 mins)<ul>
+<li>Who am I?</li>
+<li>Setting the expectations</li>
+</ul>
+</li>
+<li>Working with Geodataframes (5 mins) <ul>
+<li>Reading Spatial data as a GeoDataframe</li>
+<li>The awesomeness of GeoDataframes (An overview of some of the amazing things you can do with a single line of code eg: Spatial joins, Manipulations and transformations)</li>
+<li>Now that we has established our love for geopandas lets map geodataframes </li>
+</ul>
+</li>
+<li>Let the Mapmaking begin (10 mins)<ul>
+<li>Basic Non-Interactive maps with Geopandas and Matplotlib </li>
+<li>Creating basic interactive maps with Folium, Plotly &amp; Kepler (GeoJSONPlots, Clustermaps, Heatmaps, H3gridmaps)<ul>
+<li>Conforming geodataframes to a format accepted by these libraries (usually JSON or a list of lists)</li>
+<li>Setting the right parameters for different plots </li>
+<li>Jazzing up the maps with additional layers, custom styles, tooltips, popups, colors etc </li>
+<li>Spatiotemporal Maps with Kepler.gl + Jupyter for handling huge datasets with ease</li>
+<li>Can we make it any easier ?</li>
+</ul>
+</li>
+<li>Why can't making interactive maps be as easy as gdf.folium.plot()? </li>
+</ul>
+</li>
+<li>Enter Geopatra (8 mins)<ul>
+<li>The need for Geopatra (Could it be any Easier and Faster)</li>
+<li>Wrapping up popular mapmaking libraries for GeoDataframes</li>
+<li>Create interactive maps with just a single line </li>
+<li>Future work and Discussion :)</li>
+</ul>
+</li>
+</ol>
+<p>More Info:</p>
+<p>Normally mapping a geodataframe with folium</p>
+<p><code>import folium
+import geopandas
+world = geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
+m = folium.Map(location = [4,10], zoom_start = 3)
+folium.GeoJson(world.__geo_interface__).add_to(m)</code></p>
+<p>With Geopatra all the parameters you set with folium become optional so you don't have to care about folium</p>
+<p><code>import geopatra
+m = world.folium.plot()</code></p>
+<p>Github: https://github.com/Sangarshanan/geopatra</p>
+
+
+  
+<div class="profile">
+  
+  <div class="details">
+    <b> Sangarshanan</b>
+    <small>
+      he/him  
+    </small>
+      <p>Professional meme connoisseur and part-time developer</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>

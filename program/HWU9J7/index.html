@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>Publishing well-formed Python packages</h1>
+<div class="time-bar">
+  Sat September 05, 01:00 PM&ndash;01:25 PM &bull;
+  <a href="/program/sat/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-05T13:00:00+09:30"
+        >
+          13:00
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-05T13:25:00+09:30"
+        >
+          13:25
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-05T13:25:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/_b8D4v7YIME"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>Most of us have written python programs. Many have written modules. Some have packaged and uploaded them to servers for distribution. And a significant portion of these packages could be made better.</p>
+<p>I propose a talk expressing the need for these tools and the advantage of using them with a toy python program for <a href="https://en.wikipedia.org/wiki/Nim">Nim</a>.</p></div>
+
+&lt;h4&gt;Why&lt;/h4&gt;
+<p>Most of the well established projects follow some practices and has some mechanism in place to ensure better maintainability.</p>
+<p>But we can find a good number of packages online which are being developed without an equivalent mechanism.</p>
+<p>In this talk, I will mention some tools, which when used, can lay the foundation for a well formed package.</p>
+&lt;h4&gt;Well-formed package&lt;/h4&gt;
+<p>A package whose source has some structure which makes testing and development more efficient and less error-prone.</p>
+<p>Such a package also makes working with its source a more pleasant experience.</p>
+<p>A well-formed package makes things easier for both the developer and the user.</p>
+<p>But it is easier to get started with a structure than to maintain that form. Which calls for a mechanism to maintain that structure.</p>
+&lt;h4&gt;How&lt;/h4&gt;
+<p>The source code should adopt a style and stick with it. A linting tool like pylint can help with it.
+Or you could use black.</p>
+<p>Use type annotations along with tools like mypy.</p>
+<p>Eliminate unused code with <code>vulture</code>.</p>
+<p>Add tests to be sure that the different functionalities work as intended using tools like pytest or the built-in unittest.
+This will be extremely useful to be sure that further modifications do not break existing code.</p>
+<p>Ensure proper test coverage with coverage.py
+After all, adding tests isn't everything. One got to make sure it reaches every nook and corner.</p>
+<p>Automate tests with tox, nox, etc.</p>
+<p>Package the project in tune with the future of packaging.
+setuptools, flit or poetry</p>
+<p>And add some CI/CD.</p>
+<p>Other tools like pre-commit, bumpversion, etc may also be used.</p>
+&lt;h4&gt;Intended audience&lt;/h4&gt;
+<p>People who create and publish python packages.
+The presentation is from the package developer's perspective and not exactly about the innards of the different python packaging tools.</p>
+&lt;h4&gt;Pre-requisites&lt;/h4&gt;
+<p>Basic Python programming.
+Git</p>
+<h2>Tentative talk outline</h2>
+<ul>
+<li>Linting</li>
+<li>Type checking</li>
+<li>Eliminating dead code</li>
+<li>Tests</li>
+<li>Test coverage</li>
+<li>Test automation</li>
+<li>Packaging</li>
+<li>CI/CD</li>
+<li>Other tools</li>
+<li>Future of packaging</li>
+</ul>
+&lt;h4&gt;Speaker info (anonymized):&lt;/h4&gt;
+<p>Using Python for 5 years. Interested in text processing.</p>
+<p>Published a few packages to PyPI using different packaging tools.</p>
+<p>The proposed talk is derived from experience of creating them.</p>
+
+
+  
+<div class="profile">
+  
+  <div class="details">
+    <b> Julin Shaji</b>
+    <small>
+        
+    </small>
+      <p>Working with Python for around 5 years.</p>
+<p>Likes text processing.</p>
+<p>Github: https://github.com/ju-sh</p>
+<p>Stackoverflow: https://stackoverflow.com/users/5375464/j-s</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>

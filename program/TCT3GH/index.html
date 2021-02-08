@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>Stop Writing Tests!</h1>
+<div class="time-bar">
+  Sat September 05, 11:35 AM&ndash;12:00 PM &bull;
+  <a href="/program/sat/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-05T11:35:00+09:30"
+        >
+          11:35
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-05T12:00:00+09:30"
+        >
+          12:00
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-05T12:00:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/tiy031EoDXo"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>Tests can be helpful: they can find bugs in new code, check for regressions in old code, and clarify precisely what the code is meant to do.  On the other hand, writing tests is often tedious - and it's rare to think of an error when testing that you forgot when writing the code.</p>
+<p>My solution?  Use tools that write tests for you!</p>
+<p>Whether you're a novice Pythonista or gnarled wizard, this talk about property-based fuzzing and code introspection will educate, entertain, and help take your testing to the next level.</p></div>
+
+<p>We often think of manual testing as slower and less effective than automated testing,
+but most test suites haven't automated that much!  Computers can execute all our 
+pre-defined tests very quickly - and this is definitely a good thing, especially for 
+regression tests - but the tricky parts are still done by humans.</p>
+<p>We select test cases (inputs) and check that the corresponding outputs make sense;
+we write functions that "arrange, act, and assert" for our tests; and we decide -
+or script via CI systems - which tests to execute and when.</p>
+<p>So lets explore some next-generation tools that we could use to automate these 
+remaining parts of a testing workflow!</p>
+<p><a href="https://hypothesis.readthedocs.io/en/latest/">PROPERTY-BASED TESTING</a> helps you to write more powerful tests by automating selection 
+of test cases: instead of listing input-output pairs, you describe the kind of data 
+you want and write a test that passes <em>for all X...</em>.  We'll see a live demo, and 
+learn something about the Python builtins in the process!</p>
+<p><a href="https://hypothesis.readthedocs.io/en/latest/ghostwriter.html">CODE INTROSPECTION, and a handy templating tool</a>, can help write tests for you.
+Do you need to know any more than which code to test, and what properties should hold?</p>
+<p><a href="https://hypofuzz.com/">ADAPTIVE FUZZING tools</a> take CI to its logical conclusion: instead of running a fixed
+set of tests on each push, they sit on a server and run tests full-time... fine-tuning
+themselves to find bugs in <em>your</em> project and pulling each new commit as it lands!</p>
+<p>By the end of this talk, you'll know what these three kinds of tools can do - 
+and how to get started with automating the <em>rest</em> of your testing tomorrow.</p>
+
+
+  
+<div class="profile">
+  
+  <img src="/assets/people/LFU8AS.jpg" />
+  
+  <div class="details">
+    <b> Zac Hatfield-Dodds</b>
+    <small>
+      He/Him  
+    </small>
+      <p>I'm a researcher at the Australian National University, and maintain a number of packages - mostly focussed on testing.  When not at my desk grumbling about the buggy state of software, I can be found with a book, a block of chocolate, and a plan to go somewhere out of phone range for a walk.</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>

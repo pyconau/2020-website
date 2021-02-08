@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>dask-image: distributed image processing for large data</h1>
+<div class="time-bar">
+  Fri September 04, 01:55 PM&ndash;02:20 PM &bull;
+  <a href="/program/fri/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-04T13:55:00+09:30"
+        >
+          13:55
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-04T14:20:00+09:30"
+        >
+          14:20
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-04T14:20:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/MpjgzNeISeI"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>This talk introduces dask-image, a python library for distributed image processing. Targeted towards applications involving large array data too big to fit in memory, dask-image is built on top of numpy, scipy, and dask allowing easy scalability and portability from your laptop to the supercomputing cluster. It is of broad interest for a diverse range of data analysis applications such as video/streaming data, computer vision, and scientific fields including astronomy, microscopy and geosciences. We will provide a general overview of the dask-image library, then discuss mixing and matching with your own custom functions, and present a practical case study of a python image processing pipeline.</p></div>
+
+<p>Image datasets are large, and becoming larger. The widely used benchmark dataset COCO (Common Objects in Context) contains 330,000 individual images. The average size of a single entry on the image database EMPIAR is over 1TB, and can easily reach several terabytes.  Even where individual images are small enough to fit in-memory, many existing parallelization methods are difficult to scale seamlessly between a laptop and a supercomputing cluster. For instance, the python multiprocessing module is restricted to a single mode and can't take advantage of multiple compute nodes on a distributed supercomputing cluster.</p>
+<p>We need easy ways to work with large image data. This talk introduces dask-image, a python library for distributed image processing. The target audience are python programmers currently using numpy and scipy with large array data, where the whole dataset cannot fit in memory or is close to that limit. It's for people who want to get started with parallel processing, either because they have large single-image data, or because they want to do batch processing applying the same analysis to many smaller images (sometimes known an embarrassingly parallel problem). The specific image analysis functions provided by dask-image are of broad interest to a diverse range of analysis applications including (but not limited to) video/streaming data, computer vision, and scientific fields including astronomy, microscopy and geosciences.</p>
+<p>Specifically, this talk will cover:
+* An overview of the dask-image library
+    * Lazy image loading
+    * Image pre-processing functionality (convolutions, filters, etc.)
+    * Analysis of segmented images (distributed labeling, and measurements of those label regions)
+* Mixing in your own custom analysis functions (using dask delayed, map_blocks, and map_overlap)
+* A practical case study of a Python image processing pipeline</p>
+<p>dask-image is open source, released under a BSD 3-Clause license, and can be installed using conda or pip. You can find the source code at https://github.com/dask/dask-image and the quickstart guide at https://github.com/dask/dask-examples/blob/master/applications/image-processing.ipynb</p>
+
+
+  
+<div class="profile">
+  
+  <div class="details">
+    <b> Genevieve Buckley</b>
+    <small>
+      she/her  
+    </small>
+      <p>Genevieve Buckley is a scientist and programmer based in Melbourne Australia. She builds software tools for scientific discovery. Her interests include deep learning, automated analysis, and contributing to open source projects. She has a wealth of professional experience with image processing and analysis, spanning x-ray imaging, fluorescence microscopy, and electron beam microscopy. She is a maintainer for the dask-image project.</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>

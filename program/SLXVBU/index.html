@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>Taking Django's ORM Async</h1>
+<div class="time-bar">
+  Fri September 04, 05:10 PM&ndash;05:35 PM &bull;
+  <a href="/program/fri/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-04T17:10:00+09:30"
+        >
+          17:10
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-04T17:35:00+09:30"
+        >
+          17:35
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-04T17:35:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/ibAmA4QQDhs"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>Django 3.1 has asynchronous views - but the next step is to put asynchronous support right into the beating heart of Django, its ORM. Learn the challenges of asynchronous API design in Python, how threading is crucial even in an async world, and what it takes to teach this ORM dog new tricks.</p></div>
+
+<p>The quest to add "hybrid" asynchronous support to Django - where it can run both synchronous and asynchronous code - is a long one. Django 3.1 reached an important milestone with synchronous and asynchronous views, and now the next big step is to take a long, hard look at the thing that makes up over half the Django codebase: the ORM.</p>
+<p>The ORM is gigantic, old, and complex - and has an API designed and tweaked over many years. We'll look at some of those design decisions and how they reflect in the world of async, the challenges that underlie a hybrid API, as well as how the safety-first nature of the ORM has to evolve to deal with new and exciting async ways of breaking things.</p>
+<p>We'll also dive into what it means to have asynchronous database backends, and how support for those are progressing in the Python world - and how we're trying to ship something that's useful before fully asynchronous database APIs are done.</p>
+
+
+  
+<div class="profile">
+  
+  <img src="/assets/people/TNSFVY.jpg" />
+  
+  <div class="details">
+    <b> Andrew Godwin</b>
+    <small>
+      He/Him  
+    </small>
+      <p>Andrew is a Django core developer and contributor, a staff engineer at Robinhood, and has been behind several Django feature changes, including migrations and async support.</p>
+<p>In his spare time, he likes to fly light aircraft, adventure around any nearby mountains, or try his hand at making a whole series of weird and wonderful hobby projects.</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>

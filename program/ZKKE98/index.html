@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/build/index.css" />
+    <script src="/assets/build/index.js" async></script>
+    <title>PyCon AU 2020</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    
+    
+    <nav class="">
+      <a id="nav-logo" href="/"
+        ><img src="/assets/Logo_Standard_PyConline.svg"
+      /></a>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/sponsor">Sponsor</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/attend">Attend</a></li>
+        <li><a href="/conduct">Conduct</a></li>
+      </ul>
+      <div class="dates">
+        4&ndash;6 September 2020&emsp;&bull;&emsp;<span class="location"
+          >The Internet</span
+        >
+      </div>
+    </nav>
+    
+    
+    <div id="content">
+      
+      <main>
+        
+<h1>Piping Rain in Python - Adventures in a minute latency Radar Pipeline</h1>
+<div class="time-bar">
+  Fri September 04, 10:25 AM&ndash;10:50 AM &bull;
+  <a href="/program/fri/"
+    >Back to program</a
+  >
+</div>
+
+<div class="backstage-only backstage-block">
+  <table>
+    <tbody>
+      <tr>
+        <th>Start time</th>
+        <td
+          data-reltime="2020-09-04T10:25:00+09:30"
+        >
+          10:25
+        </td>
+      </tr>
+      <tr>
+        <th>End time</th>
+        <td
+          data-reltime="2020-09-04T10:50:00+09:30"
+        >
+          10:50
+        </td>
+      </tr>
+      <tr>
+        <th>Countdown link</th>
+        <td>
+          <a
+            href="https://nextdayvideo.com/tools/countdown-widget/?t=2020-09-04T10:50:00+09:30&r=0:5:0-1/0:2:0-1/0:1:0-1/0:10:0-1/"
+          >
+            Open timer
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/IMISG7mY7yw"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  class="ytembed"
+></iframe>
+
+
+<div class="lede"><p>This talk covers the devops for a data pipeline channeling images from a self-hosted Passive Rain Radar in Nairobi to WebApps, Mobile apps and bots in Twitter and WhatsApp. The idea was put together in a restaurant and hastily deployed by 2 engineers. It continues run (and to fail in weird ways) 6 months in. Shoestrings hold together a service with 1000's of users with around 70% uptime.</p></div>
+
+<p>In Australia we are used to live radar images provided by Bureau on Meterology (BoM). This agency provides forecasting and myriads of other services and has around 500 million in Annual budget. This is not the case in developing countries like Kenya where the last operational weather radar instrument was seen some 30 years ago. </p>
+<p>Frustrated with the lack of live radar while in Nairobi a couple of engineers put together a passive radar system with an SDR and an Intel NUC. The data from this system travels via S3 and DynamoDB from screen capture tools on the endpoint device. Eventually gets exposed via API's to web and mobile apps running on some EC2 boxes ( no fancy kubernetes cluster to see here) . There are also a couple of Cron Jobs acting as Twitter and WhatsApp bots for followers. All this scratching your own itch infrastructure has slowly improved in uptime to 70% and supports around 5000 regular users. The entire data pipeline and web applications are written as set of small Python Services using Flask, OpenCV and ImageMagick.</p>
+<p>This talk will describe how the pipeline was put together incrementally with intermediate outputs and rapidly deployed using a basic <code>git pull</code> based workflow. Along the way we will enumerate the numerous gotchas including the excessive S3 List usage, power failures on sensor site and dogpiling Twitter bots.  The budget for the operations remains 100's of dollars per month.</p>
+
+
+  
+<div class="profile">
+  
+  <div class="details">
+    <b> Tishampati Dhar</b>
+    <small>
+      he/him  
+    </small>
+      <p>Tish is an expert at building software for large-scale data processing particularly satellite and airborne sensor data. He has been awarded innovation and commercialization award for building high resolution 3D city capture product and has worked for various space agencies including NASA, scientific research organizations and in commercial research. Tisham originally grew up in Kenya and left for his studies, eventually returning to work on a logistics startup and other projects. Tish is a regular speaker at open-source technology conferences addressing the intersection of software design and hardware design. Currently he wrangles containers and Kubernetes clusters for Digital Earth Australia and Africa making analysis ready satellite imagery accessible to everyone.</p> 
+  </div>
+</div>
+
+
+
+      </main>
+      
+    </div>
+    <footer>
+      <section class="sponsor auspice">
+        <h1>PyCon AU is an event of</h1>
+        <img src='/assets/sponsor-logos/la.svg' alt="Linux Australia" />
+      </section>
+      <section class="sponsor video">
+        <h1>Video Sponsor</h1>
+        <img src='/assets/sponsor-logos/buildkite.svg' alt="Buildkite" />
+      </section>
+      <section class="sponsor infra">
+        <h1>Infrastructure Sponsor</h1>
+        <img src='/assets/sponsor-logos/microsoft.png' alt="Microsoft" />
+      </section>
+      <section class="signup">
+        <h1>Sign up for announcements</h1>
+        <form
+          method="post"
+          action="https://lists.linux.org.au/mailman/subscribe/pycon-au-announce"
+          class="mailing-list-signup-form"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="snek@example.com"
+          />
+          <button type="submit">Sign up</button>
+        </form>
+      </section>
+      <section class="copyright">
+        <b>Contact us:</b>
+        <a href="mailto:contact@pycon.org.au">contact@pycon.org.au</a><br />
+        &copy; 2020, the PyCon AU team
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    if (window.location.hash === "#debug") document.body.classList.add("debug")
+  </script>
+</html>
