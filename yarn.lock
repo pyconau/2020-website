@@ -897,10 +897,10 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@types/luxon@^1.24.4":
-  version "1.24.4"
-  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.24.4.tgz#5dbd050b89247dbccab6eaa7744874c1fb7cea85"
-  integrity sha512-ce+P0b4rVq3LNXdD5r7eDqX2ydz2BonmTgVrHrV5yxsNKTt3YpnT5QDrid7xMAThhE/gg1RLAbxqbW1OCdiZog==
+"@types/luxon@^1.26.1":
+  version "1.26.1"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.26.1.tgz#fc5ad97717e2356a2106e936f6c225cb11d79a4f"
+  integrity sha512-VW+JT7SDiSKjQss7iX/3bB8CUwSqzhKuW8EcyhzFTb/mwbIkcm92cPmok5FDWYz5TskB/tWFK/mn2ByHCf44AQ==
 
 "@types/q@^1.5.1":
   version "1.5.4"
